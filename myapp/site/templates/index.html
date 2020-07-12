@@ -1,0 +1,29 @@
+<!-- extend master template -->
+{% extends "master.html" %}
+
+
+{%block content%}
+<div class="row mb-2">
+
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-outline-success active">
+      <input type="radio" name="options" onClick="LED_onbuttonClick()" id="LED1" value="LED_on"  checked> Get
+    </label>
+    <label class="btn btn-outline-secondary ">
+      <input type="radio" name="options" onClick="LED_offbuttonClick()" id="LED1" value="LED_off"> Post 
+    </label>
+
+
+ 
+</br>
+</div>
+</div>
+
+<form>
+    
+<p id="output"></p>
+{% endblock %}
+
+
+</body>
+</html>
